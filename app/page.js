@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+
 import Header from "@/components/header/header"
 
 import ProductGrid from "@/components/product-grid/product-grid"
@@ -20,7 +22,9 @@ export default function Home() {
                 <div className="container">
                     <section className={styles.productsSection}>
                         <div className={styles.productsContainer}>
-                            <ProductFilters />
+                            <Suspense fallback={<div>Loading filters...</div>}>
+                                <ProductFilters />
+                            </Suspense>
                             <ProductGrid />
                         </div>
                     </section>
