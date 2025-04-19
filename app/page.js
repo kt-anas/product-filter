@@ -25,8 +25,8 @@ export default function Home() {
                         <div className={styles.productsContainer}>
                             <Suspense fallback={<div>Loading filters...</div>}>
                                 <ProductFilters />
+                                <ProductGrid />
                             </Suspense>
-                            <ProductGrid />
                         </div>
                     </section>
 
