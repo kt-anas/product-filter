@@ -1,0 +1,54 @@
+.main {
+  padding: 2rem 0 4rem;
+}
+
+.heroSection {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pageTitle {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.pageDescription {
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--medium-gray);
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+
+.productsSection {
+  margin-bottom: 4rem;
+}
+
+.productsContainer {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 992px) {
+  .productsContainer {
+    grid-template-columns: 200px 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .productsContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .pageTitle {
+    font-size: 1.75rem;
+  }
+
+  .heroSection {
+    margin-bottom: 2rem;
+  }
+}
